@@ -28,10 +28,18 @@
                 <a href="resume.pdf" class="btn" target="_blank" rel="noopener">Open in new tab</a>
             </div>
 
-            <div class="pdf-frame-wrap">
-                <iframe src="resume.pdf" title="Resume PDF" id="resume-frame">
-                    <p class="pdf-fallback">Your browser can't display the PDF inline. <a href="resume.pdf">Download it here</a> instead.</p>
-                </iframe>
+            <div class="pdf-viewer">
+                <div class="pdf-toolbar">
+                    <div class="pdf-zoom">
+                        <button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button>
+                        <span class="pdf-zoom-level" id="zoom-level">100%</span>
+                        <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+                    </div>
+                    <span class="pdf-page-info" id="page-info"></span>
+                </div>
+                <div class="pdf-canvas-area" id="pdf-canvas-area">
+                    <div class="pdf-status" id="pdf-status">Loading resume&hellip;</div>
+                </div>
             </div>
         </div>
     </main>
@@ -40,6 +48,8 @@
             <p>&copy; 2026 Big Guy Portfolio.</p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/resume-viewer.js"></script>
 </body>
 </html>
