@@ -25,13 +25,28 @@
 
             <!--
               To add a project, copy this block and edit it.
-              Put images in an "images" folder (e.g. images/my-project.jpg)
-              and point the src at it. Remove the project-links div
-              entirely if you don't have a link for that project yet.
+              Put images in the "images" folder and point each src at one.
+
+              Use 1 to 4 <div class="project-image"> blocks inside
+              project-gallery — just delete extras you don't need, or
+              add up to 4 total. If you only have 1 image, keep the
+              "count-1" class on project-gallery for a wide single photo;
+              otherwise remove "count-1" so images sit in a grid.
 
               <div class="project">
-                <div class="project-image">
-                  <img src="images/my-project.jpg" alt="Describe the image">
+                <div class="project-gallery">
+                  <div class="project-image">
+                    <img src="images/my-project-1.jpg" alt="Describe the image">
+                  </div>
+                  <div class="project-image">
+                    <img src="images/my-project-2.jpg" alt="Describe the image">
+                  </div>
+                  <div class="project-image">
+                    <img src="images/my-project-3.jpg" alt="Describe the image">
+                  </div>
+                  <div class="project-image">
+                    <img src="images/my-project-4.jpg" alt="Describe the image">
+                  </div>
                 </div>
                 <div class="project-body">
                   <div class="project-head">
@@ -50,8 +65,13 @@
             <div class="project-list">
 
                 <div class="project">
-                    <div class="project-image">
-                        <img src="images/project1.jpg" alt="">
+                    <div class="project-gallery">
+                        <div class="project-image">
+                            <img src="images/project1-a.jpg" alt="">
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project1-b.jpg" alt="">
+                        </div>
                     </div>
                     <div class="project-body">
                         <div class="project-head">
@@ -63,8 +83,10 @@
                 </div>
 
                 <div class="project">
-                    <div class="project-image">
-                        <img src="images/project2.jpg" alt="">
+                    <div class="project-gallery count-1">
+                        <div class="project-image">
+                            <img src="images/project2-a.jpg" alt="">
+                        </div>
                     </div>
                     <div class="project-body">
                         <div class="project-head">
@@ -76,8 +98,19 @@
                 </div>
 
                 <div class="project">
-                    <div class="project-image">
-                        <img src="images/project3.jpg" alt="">
+                    <div class="project-gallery">
+                        <div class="project-image">
+                            <img src="images/project3-a.jpg" alt="">
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project3-b.jpg" alt="">
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project3-c.jpg" alt="">
+                        </div>
+                        <div class="project-image">
+                            <img src="images/project3-d.jpg" alt="">
+                        </div>
                     </div>
                     <div class="project-body">
                         <div class="project-head">
